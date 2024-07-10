@@ -18,6 +18,12 @@ export class TemplateFormComponent {
     gender: new FormControl('', Validators.required),
   });
 
+  genders = [
+    { id: 'check-male', value: 'male', display: 'Male' },
+    { id: 'check-female', value: 'female', display: 'Female' },
+    { id: 'check-other', value: 'other', display: 'Prefer Not to Say' },
+  ];
+
   OnFormSubmit() {
     console.log(this.form);
   }
